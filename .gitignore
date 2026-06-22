@@ -1,0 +1,33 @@
+# Create .gitignore if not exists
+cat > .gitignore << 'EOF'
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Build files
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+EOF
